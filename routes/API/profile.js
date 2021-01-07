@@ -3,7 +3,6 @@ const auth = require("../../middleware/auth")
 const Profile = require("../../models/Profile")
 const User = require("../../models/User")
 const { check, validationResult } = require("express-validator");
-const { update } = require("../../models/Profile");
 
 route.get("/me", auth, async(req, res) => {
     try {
