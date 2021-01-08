@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb://127.0.0.1:27017/",
-    "jwtSecret": "mama 7elwa"
+    "jwtSecret": "mama 7elwa",
+    "githubClientId": "cfbb262968478cb8e4d9",
+    "githubSecret": "b56dcb97ffb4e2735f5fe725c374f7b6aae3bc00"
 }
