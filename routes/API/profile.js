@@ -116,10 +116,10 @@ route.post(
 // @access      Private
 route.delete("/", auth, async (req, res) => {
   try {
-    //remove Profile
-    await Profile.findOneAndRemove({ user: req.user.id });
     //remove Posts
     await Post.deleteMany({ user: req.user.id });
+    //remove Profile
+    await Profile.findOneAndRemove({ user: req.user.id });
     //remove user
     await User.findOneAndRemove({ _id: req.user.id });
     res.json({ msg: "User Removed" });
