@@ -44,7 +44,7 @@ const EditProfile = ({
       linkedin: loading || !profile.social ? "" : profile.social.linkedin,
       instagram: loading || !profile.social ? "" : profile.social.instagram,
     });
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const {
     company,
@@ -66,7 +66,7 @@ const EditProfile = ({
   };
   const onSubmit = (e) => {
     e.preventDefault();
-    creatProfile(formData, history,true);
+    creatProfile(formData, history, true);
   };
   return (
     <Fragment>
