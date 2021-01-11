@@ -7,7 +7,7 @@ import Spinner from "../layout/Spinner";
 const ProfileGithub = ({ getGithubRepos, username, repos }) => {
   useEffect(() => {
     getGithubRepos(username);
-  }, [getGithubRepos]);
+  }, [getGithubRepos,username]);
   return (
     <div className='profile-dithub'>
       <h2 className='text-primary my-1'>GitHub Repos</h2>
